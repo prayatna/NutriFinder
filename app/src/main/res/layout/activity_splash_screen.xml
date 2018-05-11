@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.ictp.prayatna.nutrifinder.SplashScreenActivity1">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:contentDescription="Logo"
+        app:srcCompat="@drawable/nutrifindername"
+        android:id="@+id/imageView7"
+        android:layout_above="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_marginBottom="26dp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/logopic"
+        android:id="@+id/imageView6"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription=""
+        tools:ignore="ContentDescription"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        tools:visibility="visible"
+        android:visibility="visible"
+        android:indeterminate="false"
+        android:layout_marginBottom="14dp"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/attribution_nutritionx"
+        android:id="@+id/imageView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/clarifailogo"
+        android:id="@+id/imageView4"
+        android:layout_above="@+id/imageView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="9dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/uclogo"
+        android:id="@+id/imageView8"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_toStartOf="@+id/progressBar"
+        android:layout_marginEnd="26dp" />
+
+</RelativeLayout>
